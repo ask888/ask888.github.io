@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Techshop</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="http://gregfranko.com/jquery.selectBoxIt.js/css/jquery.selectBoxIt.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/f912f3b241.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header-wrapper">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="row">
+                <div class="cart-mobile-xs col-xs-4 hidden-sm hidden-md hidden-lg">
+                    <a href="" class="cart-link">
+                        <span class="cart-items">
+                            <div class="cart-items-qty">
+                                <i class="glyphicon glyphicon-shopping-cart"></i>
+                                <span> 2 items</span>
+                            </div>
+                            <div class="cart-total">$110, 60</div>
+                        </span>
+                    </a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse col-sm-12 col-md-8 col-md-offset-4 ">
+
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <ul class="nav navbar-nav navbar-header">
+                                <li class="active"><a href="#">About us</a></li>
+                                <li><a href="#shipping">Shipping & Payment</a></li>
+                                <li><a href="#guarantee">Guarantee</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
+                                <li><a href="#login">Login</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 cart-wrapper">
+                            <div class="cart hidden-xs">
+                                <a href="" class="cart-link">
+                                    <span class="cart-items">
+                                        <div class="cart-items-qty"><i class="glyphicon glyphicon-shopping-cart"></i><span> 2 items</span></div>
+                                        <div class="cart-total">$110, 60</div>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<header id="header" class="container">
+    <div class="row">
+        <div class="col-md-2 col-sm-3">
+            <div class="logo-wrapper"><img src="img/logo.png" alt="" class="logo"></div>
+        </div>
+        <div class="col-md-2 col-sm-3">
+            <div class="ph-number-wrapper">
+                <i class="glyphicon glyphicon-earphone"></i>
+                <span class="ph-number">0 800 300 0 30</span>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-10">
+            <form action="" class="form-horizontal" role="search">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default btn-search" type="submit">
+                            <i class="glyphicon glyphicon-search icon-search"></i>
+                        </button>
+                    </div>
+                    <input type="text" class="form-control form-search">
+                </div>
+            </form>
+        </div>
+        <div class="filter-xs-wrapper col-xs-2 visible-xs">
+            <i class="fa fa-filter filter-xs" aria-hidden="true"></i>
+        </div>
+        <div class="col-md-10 col-md-offset-2 col-sm-12">
+            <ul class="nav-bottom hidden-xs">
+                <li><a class="active" href="#Mobile">Mobile devices</a></li>
+                <li><a href="#Computers">Computers & notebooks</a></li>
+                <li><a href="#TV">TV & audio</a></li>
+                <li><a href="#Photo">Photo & video Cameras</a></li>
+                <li><a href="#Appliances">Appliances</a></li>
+                <li><a href="#Sport">Sport</a></li>
+            </ul>
+            <select id="SelectBoxIt" class="form-control select-nav hidden-sm hidden-md hidden-lg">
+                <option><a class="active" href="#Mobile">Mobile devices</a></option>
+                <option><a href="#Computers">Computers &amp; notebooks</a></option>
+                <option><a href="#TV">TV &amp; audio</a></option>
+                <option><a href="#Photo">Photo &amp; video Cameras</a></option>
+                <option><a href="#Appliances">Appliances</a></option>
+                <option><a href="#Sport">Sport</a></option>
+            </select>
+        </div>
+    </div>
+</header>
+
+<div class="main-content-wrapper">
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-12">
+            <div class="top-line"></div>
+        </div>
+        <div class="sidebar col-md-3 col-sm-3 col-xs-12 hidden-xs">
+            <div class="filters-wrapper">
+                <div class="form-group">
+                    <form action="" role="form">
+                        <div class="filter-group">
+                            <h3 class="filter-title">Brand <i class="fa fa-chevron-circle-down visible-xs" aria-hidden="true"></i></h3>
+                            <div class="filter-list">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="Apple" value="1" id="Apple" class="styled" checked />
+                                    <label for="Apple" class="filter-name">Apple</label> <span class="filter-qty">(57)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="Samsung" value="1" id="Samsung" class="styled" />
+                                    <label for="Samsung" class="filter-name">Samsung</label> <span class="filter-qty">(72)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="Lenovo" value="1" id="Lenovo" class="styled" />
+                                    <label for="Lenovo" class="filter-name">Lenovo</label> <span class="filter-qty">(5)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="Nokia" value="1" id="Nokia" class="styled" />
+                                    <label for="Nokia" class="filter-name">Nokia</label> <span class="filter-qty">(153)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="Philips" value="1" id="Philips" class="styled" />
+                                    <label for="Philips" class="filter-name">Philips</label> <span class="filter-qty">(18)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-title">Price<i class="fa fa-chevron-circle-down visible-xs" aria-hidden="true"></i></h3>
+                            <div class="filter-list">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="$0 - $100" value="1" id="$0 - $100" class="styled" />
+                                    <label for="$0 - $100" class="filter-name">$0 - $100</label> <span class="filter-qty">(476)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="$150 - $200" value="1" id="$150 - $200" class="styled" />
+                                    <label for="$150 - $200" class="filter-name">$150 - $200</label> <span class="filter-qty">(74)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="$200 - $300" value="1" id="$200 - $300" class="styled" />
+                                    <label for="$200 - $300" class="filter-name">$200 - $300</label> <span class="filter-qty">(53)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="$300 - $400 " value="1" id="$300 - $400 " class="styled" checked />
+                                    <label for="$300 - $400 " class="filter-name">$300 - $400 </label> <span class="filter-qty">(153)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="$400 - $600" value="1" id="$400 - $600" class="styled" checked />
+                                    <label for="$400 - $600" class="filter-name">$400 - $600</label> <span class="filter-qty">(476)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="$600 - $800" value="1" id="$600 - $800" class="styled" checked />
+                                    <label for="$600 - $800" class="filter-name">$600 - $800</label> <span class="filter-qty">(574)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="$800 - $1000" value="1" id="$800 - $1000" class="styled" />
+                                    <label for="$800 - $1000" class="filter-name">$800 - $1000</label> <span class="filter-qty">(53)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="$1000 - $1500" value="1" id="$1000 - $1500" class="styled" />
+                                    <label for="$1000 - $1500" class="filter-name">$1000 - $1500</label> <span class="filter-qty">(153)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="$1500 - ..." value="1" id="$1500 - ..." class="styled" />
+                                    <label for="$1500 - ..." class="filter-name">$1500 - ...</label> <span class="filter-qty">(53)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-title">Color<i class="fa fa-chevron-circle-down visible-xs" aria-hidden="true"></i></h3>
+                            <div class="filter-list">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="White" value="1" id="White" class="styled" checked />
+                                    <label for="White" class="filter-name">White</label> <span class="filter-qty">(57)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="Silver " value="1" id="Silver " class="styled" />
+                                    <label for="Silver " class="filter-name">Silver </label> <span class="filter-qty">(72)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="Black " value="1" id="Black " class="styled" />
+                                    <label for="Black " class="filter-name">Black </label> <span class="filter-qty">(5)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="Golden" value="1" id="Golden" class="styled" checked />
+                                    <label for="Golden" class="filter-name">Golden</label> <span class="filter-qty">(153)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="Pink" value="1" id="Pink" class="styled" checked />
+                                    <label for="Pink" class="filter-name">Pink</label> <span class="filter-qty">(18)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3 class="filter-title">Screen size<i class="fa fa-chevron-circle-down visible-xs" aria-hidden="true"></i></h3>
+                            <div class="filter-list">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="1" value="1" id="1" class="styled" />
+                                    <label for="1" class="filter-name">2.3" and less</label> <span class="filter-qty">(8)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="2 " value="1" id="2 " class="styled" />
+                                    <label for="2 " class="filter-name">2.4-3.9" </label> <span class="filter-qty">(93)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="3 " value="1" id="3 " class="styled" />
+                                    <label for="3 " class="filter-name">4.3"-4.5" </label> <span class="filter-qty">(54)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="4" value="1" id="4" class="styled" />
+                                    <label for="4" class="filter-name">4.6-4.8" </label> <span class="filter-qty">(57)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="5" value="1" id="5" class="styled" checked />
+                                    <label for="5" class="filter-name">5" </label> <span class="filter-qty">(34)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="6" value="1" id="6" class="styled" checked />
+                                    <label for="6" class="filter-name">5.6-5.9" </label> <span class="filter-qty">(17)</span>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" name="7" value="1" id="7" class="styled" />
+                                    <label for="7" class="filter-name">6.0" and more </label> <span class="filter-qty">(4)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="main-content col-md-9 col-sm-9 col-xs-12">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <ul class="breadcrumbs">
+                        <li><a href="" class="breadcrumbs-link">Home</a></li>
+                        <li><span class="breadcrumbs-slash">/</span></li>
+                        <li><a href="" class="breadcrumbs-link">Mobile Devices</a></li>
+                        <li><span class="breadcrumbs-slash">/</span></li>
+                        <li class="breadcrumbs-link breadcrumbs-active">Smartphones</li>
+                    </ul>
+                    <div class="title">
+                        <h1 id="page-title">Smartphones</h1>
+                    </div>
+                    <div class="results-counter">
+                        Found: 57 items
+                    </div>
+                    <div class="sort-by">
+                        <h3 class="sort-by-title">Filter:</h3>
+                        <a href="" class="sort-by-item">price</a>
+                        <a href="" class="sort-by-item">most popular</a>
+                        <a href="" class="sort-by-item sort-by-item-active">name</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4 col-sm-6 product-item-wrapper">
+                    <div class="product-item">
+                        <a href="" class="product-img"><img src="img/product_item1.jpg" alt=""></a>
+                        <div class="product-item-info clearfix">
+                            <h3 class="product-title"><a href="">Apple iPhone 6s plus Silver (ME433)</a></h3>
+                            <div class="product-rating">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star-half-o half-star" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$750</div>
+                            <div class="add-to-cart-wrapper">
+                                <a href="" class="btn btn-primary" role="button">
+                                    <i class="glyphicon glyphicon-shopping-cart hidden-lg hidden-sm hidden-xs"></i>
+                                    <span class="hidden-md">Add to cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 product-item-wrapper">
+                    <div class="product-item">
+                        <a href="" class="product-img"><img src="img/product_item2.jpg" alt=""></a>
+                        <div class="product-item-info clearfix">
+                            <h3 class="product-title"><a href="">Apple iPhone 6 16GB Space Gray (ME433)</a></h3>
+                            <div class="product-rating">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$650</div>
+                            <div class="add-to-cart-wrapper">
+                                <a href="" class="btn btn-primary" role="button">
+                                    <i class="glyphicon glyphicon-shopping-cart hidden-lg hidden-sm hidden-xs"></i>
+                                    <span class="hidden-md">Add to cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 product-item-wrapper">
+                    <div class="product-item">
+                        <a href="" class="product-img"><img src="img/product_item3.jpg" alt=""></a>
+                        <div class="product-item-info clearfix">
+                            <h3 class="product-title"><a href="">Apple iPhone 6s 16GB Rose Gold (MKQM2)</a></h3>
+                            <div class="product-rating">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star-o empty-star" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$670</div>
+                            <div class="add-to-cart-wrapper">
+                                <a href="" class="btn btn-primary" role="button">
+                                    <i class="glyphicon glyphicon-shopping-cart hidden-lg hidden-sm hidden-xs"></i>
+                                    <span class="hidden-md">Add to cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 product-item-wrapper">
+                    <div class="product-item">
+                        <a href="" class="product-img"><img src="img/product_item4.jpg" alt=""></a>
+                        <div class="product-item-info clearfix">
+                            <h3 class="product-title"><a href="">Apple iPhone 6s plus Silver (ME433)</a></h3>
+                            <div class="product-rating">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star-half-o half-star" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$750</div>
+                            <div class="add-to-cart-wrapper">
+                                <a href="" class="btn btn-primary" role="button">
+                                    <i class="glyphicon glyphicon-shopping-cart hidden-lg hidden-sm hidden-xs"></i>
+                                    <span class="hidden-md">Add to cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 product-item-wrapper">
+                    <div class="product-item">
+                        <a href="" class="product-img"><img src="img/product_item5.jpg" alt=""></a>
+                        <div class="product-item-info clearfix">
+                            <h3 class="product-title"><a href="">Apple iPhone 4s (MKQM2)</a></h3>
+                            <div class="product-rating">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star-o empty-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star-o empty-star" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$280</div>
+                            <div class="add-to-cart-wrapper">
+                                <a href="" class="btn btn-primary" role="button">
+                                    <i class="glyphicon glyphicon-shopping-cart hidden-lg hidden-sm hidden-xs"></i>
+                                    <span class="hidden-md">Add to cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 product-item-wrapper">
+                    <div class="product-item">
+                        <a href="" class="product-img"><img src="img/product_item6.jpg" alt=""></a>
+                        <div class="product-item-info clearfix">
+                            <h3 class="product-title"><a href="">Apple iPhone 6s 128GB Gold (MKQV2)</a></h3>
+                            <div class="product-rating">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star-o empty-star" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$670</div>
+                            <div class="add-to-cart-wrapper">
+                                <a href="" class="btn btn-primary" role="button">
+                                    <i class="glyphicon glyphicon-shopping-cart hidden-lg hidden-sm hidden-xs"></i>
+                                    <span class="hidden-md">Add to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 product-item-wrapper">
+                    <div class="product-item">
+                        <a href="" class="product-img"><img src="img/product_item7.jpg" alt=""></a>
+                        <div class="product-item-info clearfix">
+                            <h3 class="product-title"><a href="">Apple iPhone 6s 16GB Silver (MKQK2)</a></h3>
+                            <div class="product-rating">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star-half-o half-star" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$750</div>
+                            <div class="add-to-cart-wrapper">
+                                <a href="" class="btn btn-primary" role="button">
+                                    <i class="glyphicon glyphicon-shopping-cart hidden-lg hidden-sm hidden-xs"></i>
+                                    <span class="hidden-md">Add to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 product-item-wrapper">
+                    <div class="product-item">
+                        <a href="" class="product-img"><img src="img/product_item8.jpg" alt=""></a>
+                        <div class="product-item-info clearfix">
+                            <h3 class="product-title"><a href="">Apple iPhone 5S 16GB Space Gray (ME432)</a></h3>
+                            <div class="product-rating">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star-o empty-star" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$650</div>
+                            <div class="add-to-cart-wrapper">
+                                <a href="" class="btn btn-primary" role="button">
+                                    <i class="glyphicon glyphicon-shopping-cart hidden-lg hidden-sm hidden-xs"></i>
+                                    <span class="hidden-md">Add to cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 product-item-wrapper">
+                    <div class="product-item">
+                        <a href="" class="product-img"><img src="img/product_item9.jpg" alt=""></a>
+                        <div class="product-item-info clearfix">
+                            <h3 class="product-title"><a href="">Apple iPhone 6s Plus 128GB Space Gray (MKUD2)</a></h3>
+                            <div class="product-rating">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star full-star" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-star-half-o half-star" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-price">$670</div>
+                            <div class="add-to-cart-wrapper">
+                                <a href="" class="btn btn-primary" role="button">
+                                    <i class="glyphicon glyphicon-shopping-cart hidden-lg hidden-sm hidden-xs"></i>
+                                    <span class="hidden-md">Add to cart</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="load-more-wrapper col-xs-12">
+                    <a href="" role="button" class="btn btn-default load-more-btn">Load other 35 items</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 footer-col copyright-wrapper">
+                <a href="" class="footer-logo"><img src="img/logo.png" alt=""></a>
+                <div class="copyright">© 2007–2016</div>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-col">
+                <div class="workhours-wrapper">
+                    <h3>We are opened</h3>
+                    <p class="workhours">Mo – Fr: 9 am - 9 pm</p>
+                    <p class="workhours">Sa: 9 am - 8 pm</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-col">
+                <div class="contact-us-wrapper">
+                    <h3>Contact us</h3>
+                    <p class="footer-ph-number">0 800 300 0 30</p>
+                    <p class="footer-email">info@techshop.com</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-col">
+                <div class="socials-wrapper">
+                    <h3>Social services</h3>
+                    <ul class="socials">
+                        <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous">
+</script>
+    <script>
+        (function ($) {
+            $(function() {
+                // Calls the selectBoxIt method on your HTML select box.
+                $("#SelectBoxIt").selectBoxIt(
+                        {autoWidth: "true"}
+                );
+                // Toggle sidebar's visibility.
+                $(".filter-xs").on("click", function() {
+                    $(".sidebar").toggleClass("hidden-xs");
+                });
+                // Toggle filter-list's visibility.
+                $(".filter-title").on("click", function () {
+                    $(this).siblings(".filter-list").toggleClass("opened");
+                });
+            });
+        })(jQuery);
+    </script>
+</body>
+</html>

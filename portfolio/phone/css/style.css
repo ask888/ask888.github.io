@@ -1,14 +1,14 @@
 /*============== basic styles ====================*/
 @font-face {
     font-family: "CompPro";
-    src: url("fonts/CompPro/PFDinTextCompPro-Medium.ttf");
+    src: url("Fonts/CompPro/PFDinTextCompPro-Medium.ttf");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "CompPro";
-    src: url("fonts/CompPro/PFDinTextCompPro-Regular.ttf");
+    src: url("Fonts/CompPro/PFDinTextCompPro-Regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
